@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form class="form" id="form">
+        <label for="timeBeforeInactive">Час очікування, с</label>
+        <input
+          type="number"
+          id="timeBeforeInactive"
+          name="timeBeforeInactive"
+          min="1"
+          step="1"
+          value="10"
+        />
+        <label for="delayImage">Інтервал між картинками, c</label>
+        <input
+          type="number"
+          id="delayImage"
+          name="delayImage"
+          min="1"
+          step="1"
+          value="5"
+        />
+        <button type="button" id="button">Обновить</button>
+      </form>
+      <div id="container">
+        <div id="img">
+          <img
+            id="myImg"
+            src="https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="picture"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="mian.js"></script>
+  </body>
+</html>
